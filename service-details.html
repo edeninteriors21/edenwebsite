@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://eden-interiors.pages.dev/service-details.html">
+    <title>Service Details | Eden Interiors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Hero Section */
+        .service-hero {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            background-size: cover;
+            background-position: center;
+            margin-top: -80px;
+            /* Under navbar */
+            padding-top: 80px;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Intro Section */
+        .service-intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .intro-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--c-text-dark);
+        }
+
+        .intro-text p {
+            margin-bottom: 1rem;
+            color: var(--c-text-muted);
+            line-height: 1.8;
+        }
+
+        .intro-image img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius-md);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: var(--radius-sm);
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            border: 1px solid transparent;
+            position: relative;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--c-primary);
+            /* Green accent */
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--c-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-title {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .feature-title::after {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 2px;
+            background: var(--c-primary);
+            margin: 5px auto 0;
+        }
+
+        .feature-text {
+            font-size: 0.9rem;
+            color: var(--c-text-muted);
+            line-height: 1.6;
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            height: 250px;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .section-header p {
+            color: var(--c-text-muted);
+            font-size: 1rem;
+        }
+
+        .section-line {
+            width: 50px;
+            height: 3px;
+            background: var(--c-primary);
+            margin: 10px auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .service-intro {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Eden Interiors</a>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link active">Our Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <section class="service-hero" id="serviceHero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 id="serviceTitle" class="reveal-up">Service Title</h1>
+            <p id="serviceSubtitle" class="reveal-up delay-100">Subtitle loading...</p>
+        </div>
+    </section>
+
+    <!-- Intro Section: Side by Side -->
+    <section class="section">
+        <div class="container">
+            <div class="service-intro">
+                <div class="intro-text reveal-up">
+                    <h2 id="serviceHeading">Service Heading</h2>
+                    <div id="serviceDesc">Description loading...</div>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 2rem;">Get Free Consultation</a>
+                </div>
+                <div class="intro-image reveal-up delay-100">
+                    <img id="introImage" src="" alt="Service Highlight">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Grid -->
+    <section class="section" style="background: #fafafa;">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h3>Why Choose Our <span id="serviceCategoryName">Service</span></h3>
+                <div class="section-line"></div>
+                <p>Discover the benefits of our premium solutions</p>
+            </div>
+
+            <div id="serviceFeatures" class="features-grid">
+                <!-- Features injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h3>Our Gallery</h3>
+                <div class="section-line"></div>
+                <p>Explore our latest projects</p>
+            </div>
+
+            <div id="galleryGrid" class="gallery-grid reveal-up">
+                <!-- Images injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
+                <div>
+                    <h3>Eden Interiors</h3>
+                    <p>Creating beautiful, functional spaces since 2020.</p>
+                    <div style="margin-top: 20px;">
+                        <a href="https://www.instagram.com/edeninteriors_7/" target="_blank"
+                            style="color: white; margin-right: 15px;"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="https://www.instagram.com/edeninteriors_7/" target="_blank"
+                            style="color: white; margin-right: 15px;"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://wa.me/919000460041" target="_blank" style="color: white;"><i
+                                class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p>D.No.28-136, 5/19 Brodipet<br>Guntur-522002</p>
+                    <p style="margin-top: 10px;">+91 9000460041</p>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px; padding-top: 20px; text-align: center; font-size: 0.8rem;">
+                &copy; 2026 Eden Interiors. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Inline initialization for this specific page
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const serviceKey = params.get('service');
+            if (serviceKey && window.loadServiceDetails) {
+                window.loadServiceDetails(serviceKey);
+            }
+        });
+    </script>
+</body>
+
+</html>

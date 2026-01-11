@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://eden-interiors.pages.dev/designs.html">
+    <title>Projects | Eden Interiors</title>
+    <meta name="description"
+        content="Browse our portfolio of stunning interior designs. From modern bedrooms to luxury living rooms, see how we transform spaces in Guntur and beyond.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <i class="fas fa-leaf loader-icon"></i>
+        </div>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Eden Interiors</a>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link">Our Services</a></li>
+
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section bg-white" style="padding-top: 150px; padding-bottom: 50px;">
+        <div class="container text-center">
+            <h1 class="reveal-up">Our Masterpieces</h1>
+            <p class="reveal-up delay-100" style="color: var(--c-text-muted);">
+                A collection of our finest work across residential and commercial spaces.
+            </p>
+        </div>
+    </header>
+
+    <!-- Project Layout: 6 Items (Kohitha Style) -->
+    <section class="section">
+        <div class="container">
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));">
+
+                <!-- Project 1 -->
+                <div class="card-premium reveal-up">
+                    <img src="https://placehold.co/500x350/2E594A/F5F2EB?text=Modern+Kitchen" loading="lazy"
+                        alt="Modern Kitchen" class="card-img-placeholder" style="height: 250px;">
+                    <h3 class="card-title">Modern Kitchen Design</h3>
+                    <p class="card-text">Sleek, handleless cabinetry with island.</p>
+                    <button class="btn btn-secondary project-modal-trigger"
+                        data-img="https://placehold.co/1000x800/2E594A/F5F2EB?text=Modern+Kitchen+Full">View
+                        Project</button>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card-premium reveal-up delay-100">
+                    <img src="https://placehold.co/500x350/8DA399/FFF?text=Walk-in+Wardrobe" loading="lazy"
+                        alt="Wardrobe" class="card-img-placeholder" style="height: 250px;">
+                    <h3 class="card-title">Walk-in Wardrobe</h3>
+                    <p class="card-text">Luxurious storage with glass accents.</p>
+                    <button class="btn btn-secondary project-modal-trigger"
+                        data-img="https://placehold.co/1000x800/8DA399/FFF?text=Wardrobe+Full">View Project</button>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card-premium reveal-up delay-200">
+                    <img src="https://placehold.co/500x350/C2A878/FFF?text=Luxury+Living" alt="Living Room"
+                        class="card-img-placeholder" style="height: 250px;">
+                    <h3 class="card-title">Contemporary Living Room</h3>
+                    <p class="card-text">Warm textures and statement lighting.</p>
+                    <button class="btn btn-secondary project-modal-trigger"
+                        data-img="https://placehold.co/1000x800/C2A878/FFF?text=Living+Full">View Project</button>
+                </div>
+
+                <!-- Project 4: Corporate -->
+                <div class="card-premium reveal-up">
+                    <img src="https://placehold.co/500x350/333/FFF?text=Corporate+Office" alt="Office"
+                        class="card-img-placeholder" style="height: 250px;">
+                    <h3 class="card-title">Corporate Office</h3>
+                    <p class="card-text">Functional workspaces with brand identity.</p>
+                    <button class="btn btn-secondary project-modal-trigger"
+                        data-img="https://placehold.co/1000x800/333/FFF?text=Office+Full">View Project</button>
+                </div>
+
+                <!-- Project 5: Traditional Kitchen -->
+                <div class="card-premium reveal-up delay-100">
+                    <img src="https://placehold.co/500x350/555/FFF?text=Classic+Kitchen" alt="Classic Kitchen"
+                        class="card-img-placeholder" style="height: 250px;">
+                    <h3 class="card-title">Traditional Kitchen</h3>
+                    <p class="card-text">Timeless wood finishes and detailing.</p>
+                    <button class="btn btn-secondary project-modal-trigger"
+                        data-img="https://placehold.co/1000x800/555/FFF?text=Classic+Kitchen+Full">View Project</button>
+                </div>
+
+                <!-- Project 6: Kids Wardrobe -->
+                <div class="card-premium reveal-up delay-200">
+                    <img src="https://placehold.co/500x350/777/FFF?text=Kids+Wardrobe" alt="Kids Wardrobe"
+                        class="card-img-placeholder" style="height: 250px;">
+                    <h3 class="card-title">Kids Wardrobe</h3>
+                    <p class="card-text">Colorful, safe, and accessible storage.</p>
+                    <button class="btn btn-secondary project-modal-trigger"
+                        data-img="https://placehold.co/1000x800/777/FFF?text=Kids+Wardrobe+Full">View Project</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal (Simple) -->
+    <div id="project-modal"
+        style="position: fixed; inset: 0; background: rgba(46, 89, 74, 0.95); z-index: 2000; display: none; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s;">
+        <div style="position: relative; max-width: 90vw; max-height: 90vh;">
+            <img id="modal-img" src=""
+                style="border: 4px solid white; border-radius: var(--radius-sm); max-height: 80vh;">
+            <button id="modal-close"
+                style="position: absolute; top: -50px; right: 0; background: none; border: none; color: white; font-size: 2rem; cursor: pointer;">&times;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
+                <div>
+                    <h3>Eden Interiors</h3>
+                    <p>Creating beautiful, functional spaces since 2020.</p>
+                    <div style="margin-top: 20px;">
+                        <a href="https://www.instagram.com/edeninteriors_7/" target="_blank"
+                            style="color: white; margin-right: 15px;"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="https://www.instagram.com/edeninteriors_7/" target="_blank"
+                            style="color: white; margin-right: 15px;"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://wa.me/919000460041" target="_blank" style="color: white;"><i
+                                class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p>D.No.28-136, 5/19 Brodipet<br>Guntur-522002</p>
+                    <p style="margin-top: 10px;">+91 9000460041</p>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px; padding-top: 20px; text-align: center; font-size: 0.8rem;">
+                &copy; 2026 Eden Interiors. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
