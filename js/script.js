@@ -230,6 +230,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Fade Out on Link Click
+    // Fade Out on Link Click - Removed for instant navigation
+    /*
     document.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', e => {
             const href = link.getAttribute('href');
@@ -245,6 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    */
 
     // 6. Hero Background Slideshow
     const slides = document.querySelectorAll('.hero-slide');
