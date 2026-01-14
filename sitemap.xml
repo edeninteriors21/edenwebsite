@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://eden-interiors.pages.dev/</loc>
+    <loc>https://eden-interiors.netlify.app/</loc>
     <priority>1.00</priority>
   </url>
 
   <url>
-    <loc>https://eden-interiors.pages.dev/services.html</loc>
+    <loc>https://eden-interiors.netlify.app/services.html</loc>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://eden-interiors.pages.dev/about.html</loc>
+    <loc>https://eden-interiors.netlify.app/about.html</loc>
     <priority>0.70</priority>
   </url>
 
   <url>
-    <loc>https://eden-interiors.pages.dev/contact.html</loc>
+    <loc>https://eden-interiors.netlify.app/contact.html</loc>
     <priority>0.70</priority>
   </url>
 
