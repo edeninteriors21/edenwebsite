@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>https://eden-interiors.netlify.app/</loc>
-    <priority>1.00</priority>
+    <loc>https://edeninteriors.co.in/</loc>
+    <lastmod>2026-01-29</lastmod>
+    <priority>1.0</priority>
   </url>
-
   <url>
-    <loc>https://eden-interiors.netlify.app/services.html</loc>
-    <priority>0.90</priority>
+    <loc>https://edeninteriors.co.in/about.html</loc>
+    <lastmod>2026-01-29</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://eden-interiors.netlify.app/about.html</loc>
-    <priority>0.70</priority>
+    <loc>https://edeninteriors.co.in/services.html</loc>
+    <lastmod>2026-01-29</lastmod>
+    <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://eden-interiors.netlify.app/contact.html</loc>
-    <priority>0.70</priority>
+    <loc>https://edeninteriors.co.in/contact.html</loc>
+    <lastmod>2026-01-29</lastmod>
+    <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://edeninteriors.co.in/designs.html</loc>
+    <lastmod>2026-01-29</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>

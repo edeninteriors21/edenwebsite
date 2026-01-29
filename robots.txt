@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://eden-interiors.netlify.app/sitemap.xml
+Sitemap: https://edeninteriors.co.in/sitemap.xml
